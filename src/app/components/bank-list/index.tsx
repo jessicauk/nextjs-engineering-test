@@ -43,7 +43,7 @@ export default function BankList() {
     useAppStore.persist.rehydrate();
   }, []);
   return (
-    <div className="flex min-h-screen flex-col items-center justify-between p-24">
+    <div className="flex min-h-screen flex-col items-center justify-between gap-10 my-10">
       {Array.isArray(filteredAndSortBanks) &&
         filteredAndSortBanks.map((bank) => (
           <BankItem key={bank.bankName} bank={bank} onDelete={onDelete} />

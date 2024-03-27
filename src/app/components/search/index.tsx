@@ -19,12 +19,13 @@ export default function Search() {
   }, [search]);
 
   return (
-    <div className="flex flex-col items-center justify-between p-8 w-full">
+    <div className="flex flex-col items-center justify-between p-2 w-full">
       <TextField
         label="Search"
+        placeholder="Search"
         variant="outlined"
         value={search ?? ""}
-        className="w-full text-white"
+        className="w-full text-white border-white custom-outline"
         onChange={(e) => setSearch(e.target.value)}
       />
     </div>

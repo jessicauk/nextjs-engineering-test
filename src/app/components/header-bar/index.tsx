@@ -18,10 +18,10 @@ export default function HeaderBar() {
     setFilteredAndSortBanks(banks ?? []);
   }, [setSearch, setFilteredAndSortBanks, banks]);
   return (
-    <div className="flex flex-col md:flex-row justify-between items-center w-full p-8">
+    <div className="flex flex-col md:flex-row justify-between content-center items-center w-full gap-4">
       <Search />
       <Sort />
-      <Button variant="contained" onClick={reset}>
+      <Button variant="contained" onClick={reset} className="">
         Reset
       </Button>
     </div>
