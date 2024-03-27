@@ -2,6 +2,7 @@ import { useState } from "react";
 import InputLabel from "@mui/material/InputLabel";
 import Select, { SelectChangeEvent } from "@mui/material/Select";
 import MenuItem from "@mui/material/MenuItem";
+import FormControl from "@mui/material/FormControl";
 import { useAppStore } from "@/store";
 import useStore from "@/store/useStore";
 import { sortBanks } from "@/utils/sorting";
@@ -24,20 +25,20 @@ export default function Sort() {
     );
   };
   return (
-    <div className="flex flex-col items-center justify-between align-center p-2 w-full">
-      <InputLabel id="demo-simple-select-label">Sort by:</InputLabel>
+    <FormControl className="flex flex-col items-center justify-between align-center p-2 w-full">
+      <InputLabel id="demo-simple-select-label">Sort by</InputLabel>
       <Select
-        labelId="demo-simple-select-label"
+        label="Sort by"
         id="demo-simple-select"
         value={sortBy}
-        label="Sort by"
         onChange={handleChange}
         className="w-full text-white border-white custom-outline"
+        placeholder="Sort by"
       >
         <MenuItem value="">None</MenuItem>
         <MenuItem value="asc">Ascendant</MenuItem>
         <MenuItem value="desc">Descendant</MenuItem>
       </Select>
-    </div>
+    </FormControl>
   );
 }

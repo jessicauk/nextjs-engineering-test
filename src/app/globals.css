@@ -25,7 +25,27 @@ body {
     )
     rgb(var(--background-start-rgb));
 }
+.MuiInputLabel-root {
+  color: rgb(255 255 255);
+}
+.MuiFormLabel-root .MuiInputLabel-root:focus {
+  color: rgb(255 255 255);
+}
+.custom-outline .MuiOutlinedInput-notchedOutline {
+  border-color: rgb(255 255 255);
+}
 
+.custom-outline fieldset legend {
+  color: rgb(255 255 255);
+}
+
+.custom-outline input[placeholder="Sort by"] {
+  color: rgb(255 255 255);
+}
+
+input[placeholder="Search"] {
+  color: rgb(255 255 255);
+}
 .custom-outline fieldset.MuiOutlinedInput-notchedOutline {
   border-color: rgb(255 255 255);
 }
