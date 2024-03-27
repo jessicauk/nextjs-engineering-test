@@ -3,8 +3,9 @@ import Box from "@mui/material/Box";
 
 export default function Loader() {
   return (
-    <Box>
-      <CircularProgress className="text-red-600" />
+    <Box className="flex flex-col justify-center items-center content-center">
+      <CircularProgress className="text-blue-600" />
+      <p className="">Loading...</p>
     </Box>
   );
 }
