@@ -14,10 +14,12 @@ export default function BankItem({ bank, onDelete }: BankItemProps) {
       key={bankName}
       className="flex flex-col items-center justify-between p-8 border border-gray-200 rounded-md shadow-md"
     >
-      <h2 className="text-xl font-bold">{bankName}</h2>
-      <DeleteIcon onClick={() => onDelete(bankName)} />
+      <div className="w-full flex flex-row justify-between content-center items-center my-4">
+        <h2 className="text-xl font-bold">{bankName}</h2>
+        <DeleteIcon onClick={() => onDelete(bankName)} />
+      </div>
       <p>{description}</p>
-      <p>{age}</p>
+      <p>{age} años</p>
       <Image src={url} alt="bank" width={100} height={100} />
     </div>
   );

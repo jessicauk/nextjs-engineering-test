@@ -26,6 +26,18 @@ body {
     rgb(var(--background-start-rgb));
 }
 
+.custom-outline fieldset.MuiOutlinedInput-notchedOutline {
+  border-color: rgb(255 255 255);
+}
+
+.custom-outline.Mui-focused .MuiOutlinedInput-notchedOutline {
+  border-color: rgb(255 255 255);
+}
+
+.custom-outline:hover .MuiOutlinedInput-notchedOutline {
+  border-color: rgb(255 255 255)
+}
+
 @layer utilities {
   .text-balance {
     text-wrap: balance;

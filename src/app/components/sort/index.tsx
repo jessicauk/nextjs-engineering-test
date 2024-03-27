@@ -24,7 +24,7 @@ export default function Sort() {
     );
   };
   return (
-    <div className="flex flex-col items-center justify-between align-center p-8 w-full">
+    <div className="flex flex-col items-center justify-between align-center p-2 w-full">
       <InputLabel id="demo-simple-select-label">Sort by:</InputLabel>
       <Select
         labelId="demo-simple-select-label"
@@ -32,8 +32,9 @@ export default function Sort() {
         value={sortBy}
         label="Sort by"
         onChange={handleChange}
-        className="w-full"
+        className="w-full text-white border-white custom-outline"
       >
+        <MenuItem value="">None</MenuItem>
         <MenuItem value="asc">Ascendant</MenuItem>
         <MenuItem value="desc">Descendant</MenuItem>
       </Select>
