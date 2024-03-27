@@ -1,9 +1,8 @@
-import { API_BANKS, MESSAGE_ERROR } from "@/utils/constants";
-const API_URL = process?.env.NEXT_PUBLIC_API_URL ?? "";
+import { API_BANKS_NEXT, MESSAGE_ERROR } from "@/utils/constants";
 
 export async function getAllBanks() {
   try {
-    const response = await fetch(`${API_URL}${API_BANKS}`);
+    const response = await fetch(API_BANKS_NEXT);
     if (!response.ok) {
       throw new Error(MESSAGE_ERROR);
     }
